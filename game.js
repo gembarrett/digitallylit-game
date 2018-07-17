@@ -1,6 +1,6 @@
-function changeImage(src) {
-  document.getElementById('preview').src=src;
-}
+// function changeImage(src) {
+//   document.getElementById('preview').src=src;
+// }
 
 var firstChoice = document.getElementById('first');
 var secondChoice = document.getElementById('second');
