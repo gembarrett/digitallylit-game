@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+}
+
+.choices {
+  height: 200px;
+  border: 4px solid #555;
+  padding: 1px;
+  margin: 0 10px 10px 0;
+}
