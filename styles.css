@@ -5,21 +5,59 @@ body {
 }
 
 button {
-  border-radius: 10px;
-  border: 10px solid grey;
-  width:50%;
-  height: 200px;
+  border-radius: 100px;
+  width:40%;
+  height: 400px;
+  box-sizing: border-box;
+  float: left;
+  cursor: pointer;
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
 }
 
 .panel {
   display: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }
 
 .panel.active {
   display: block;
 }
 
+#p5 img {
+}
+
+.blackwhitecat {
+  background-image: url('https://media.giphy.com/media/8dTuHJeEMjxW8/giphy.gif');
+}
+
+.fluffy {
+  background-image: url('https://media.giphy.com/media/JUhkyHE8n0zLy/giphy.gif');
+}
+
+.grey {
+  background-image: url('https://media.giphy.com/media/5RmzKJ46wSCCA/giphy.gif');
+}
+
 .tortoiseshell {
   background-image: url('https://media.giphy.com/media/jlob27bSOoyHK/giphy.gif');
-  background-size: cover;
+}
+
+.ginger {
+  background-image: url('https://media.giphy.com/media/Rn26lWjqA0uUU/giphy.gif');
+}
+
+.black {
+  background-image: url('https://media.giphy.com/media/Tu1htsyzNU9qw/giphy.gif');
+}
+
+.siamese {
+  background-image: url('https://media.giphy.com/media/TBATBEkySRHVe/giphy.gif');
+}
+
+.tabby {
+  background-image: url('https://media.giphy.com/media/Gf54zTxt2QKru/giphy.gif');
 }
