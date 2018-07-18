@@ -1,4 +1,4 @@
-#DigitallyLit game
+# DigitallyLit game
 
 Basic Javascript comparison game for DigitallyLit group
 
