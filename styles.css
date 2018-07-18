@@ -4,57 +4,58 @@ body {
   color: white;
 }
 
+/* button styles */
 button {
-  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
   width:40%;
   height: 400px;
-  box-sizing: border-box;
-  float: left;
   cursor: pointer;
-  margin: 5px;
-  background-position: center;
-  background-size: cover;
+  border: 2px solid white;
+  margin: 10px;
+}
+.panel img {
+  border: 2px solid white;
 }
 
+/* hide and show panels */
 .panel {
   display: none;
-  margin: 0;
-  padding: 0;
   overflow: auto;
 }
-
 .panel.active {
   display: block;
 }
 
-.blackwhitecat {
+/* button backgrounds */
+#blackwhitecat {
   background-image: url('https://media.giphy.com/media/8dTuHJeEMjxW8/giphy.gif');
 }
 
-.fluffy {
+#fluffy {
   background-image: url('https://media.giphy.com/media/JUhkyHE8n0zLy/giphy.gif');
 }
 
-.grey {
+#grey {
   background-image: url('https://media.giphy.com/media/5RmzKJ46wSCCA/giphy.gif');
 }
 
-.tortoiseshell {
+#tortoiseshell {
   background-image: url('https://media.giphy.com/media/jlob27bSOoyHK/giphy.gif');
 }
 
-.ginger {
+#ginger {
   background-image: url('https://media.giphy.com/media/Rn26lWjqA0uUU/giphy.gif');
 }
 
-.black {
+#black {
   background-image: url('https://media.giphy.com/media/Tu1htsyzNU9qw/giphy.gif');
 }
 
-.siamese {
+#siamese {
   background-image: url('https://media.giphy.com/media/TBATBEkySRHVe/giphy.gif');
 }
 
-.tabby {
+#tabby {
   background-image: url('https://media.giphy.com/media/Gf54zTxt2QKru/giphy.gif');
 }

@@ -5,26 +5,38 @@
   </head>
   <body>
     <h1>Which is cuter?</h1>
+    <!-- first panel shows at the start by using active class -->
     <div class="panel active" id="p1">
-      <button class="blackwhitecat" onclick="handleAnswer(10)"></button>
-      <button class="fluffy" onclick="handleAnswer(3)"></button>
+
+      <!-- give each button an id -->
+      <button id="blackwhitecat" onclick="handleAnswer(25)"></button>
+
+      <!-- each function call should pass a score -->
+      <button id="fluffy" onclick="handleAnswer(0)"></button>
     </div>
+
+    <!-- other panels hidden by default -->
     <div class="panel" id="p2">
-      <button class="grey" onclick="handleAnswer(3)"></button>
-      <button class="tortoiseshell" onclick="handleAnswer(5)"></button>
+      <button id="grey" onclick="handleAnswer(0)"></button>
+      <button id="tortoiseshell" onclick="handleAnswer(25)"></button>
     </div>
     <div class="panel" id="p3">
-      <button class="ginger" onclick="handleAnswer(8)"></button>
-      <button class="black" onclick="handleAnswer(15)"></button>
+      <button id="ginger" onclick="handleAnswer(0)"></button>
+      <button id="black" onclick="handleAnswer(25)"></button>
     </div>
     <div class="panel" id="p4">
-      <button class="siamese" onclick="handleAnswer(12)"></button>
-      <button class="tabby" onclick="handleAnswer(9)"></button>
+      <button id="siamese" onclick="handleAnswer(25)"></button>
+      <button id="tabby" onclick="handleAnswer(0)"></button>
     </div>
+
+    <!-- final panel has non-clickable local image -->
     <div class="panel" id="p5">
       <img src="end.gif" />
-      <p>Your score is: <span id="score">0</span></p>
+
+      <!-- number for updating is identified with an id -->
+      <p>Your score is: <span id="score">0</span>/100</p>
     </div>
   </body>
+  <!-- call javascript after html is loaded -->
   <script src="game.js" type="text/javascript"></script>
 </html>
