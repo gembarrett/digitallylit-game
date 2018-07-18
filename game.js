@@ -2,36 +2,23 @@
 //   document.getElementById('preview').src=src;
 // }
 
-var firstChoice = document.getElementById('first');
-var secondChoice = document.getElementById('second');
-var score = 0;
+var totalScore = 0;
 var scoreText = document.getElementById('score');
 var round = 1;
 
-var array = [
-  "Black and white cat",
-  "Tortoiseshell cat",
-  "Grey cat",
-  "Ginger cat"
-];
+function handleAnswer(score){
+  totalScore = totalScore + score;
+  updateImage();
+  scoreText.innerText = totalScore;
+  round = round + 1;
+};
 
-function handleAnswer(id){
-  if (id === 'first') {
-    alert('you chose the first option!');
-    score = score + 13;
-    updateScore(score);
-  } else {
-    alert('you chose the second option!');
-    score = score + 5;
-    updateScore(score);
-  }
-}
+function updateImage() {
+  var active = 'p' + round;
+  var next = 'p' + (round + 1);
+  var activePanel = document.getElementById(active);
+  var nextPanel = document.getElementById(next);
 
-function updateScore(score) {
-  scoreText.innerText = score;
-}
-
-function updateText(current) {
-  firstChoice.innerText = array[current+2];
-  secondChoice.innerText = array[current+1];
+  activePanel.classList.remove('active');
+  nextPanel.classList.add('active');
 }

@@ -5,8 +5,22 @@
   </head>
   <body>
     <h1>Which is cuter?</h1>
-      <button id="first" onclick="handleAnswer(this.id)">Black and white cat</button>
-      <button id="second" onclick="handleAnswer(this.id)">Tortoiseshell cat</button>
+    <div class="panel active" id="p1">
+      <button class="blackwhitecat" onclick="handleAnswer(10)"></button>
+      <button class="fluffy" onclick="handleAnswer(3)"></button>
+    </div>
+    <div class="panel" id="p2">
+      <button class="grey" onclick="handleAnswer(3)"></button>
+      <button class="tortoiseshell" onclick="handleAnswer(5)"></button>
+    </div>
+    <div class="panel" id="p3">
+      <button class="ginger" onclick="handleAnswer(8)"></button>
+      <button class="black" onclick="handleAnswer(15)"></button>
+    </div>
+    <div class="panel" id="p4">
+      <button class="siamese" onclick="handleAnswer(12)"></button>
+      <button class="tabby" onclick="handleAnswer(9)"></button>
+    </div>
     <p>Score: <span id="score">0</span></p>
   </body>
   <script src="game.js" type="text/javascript"></script>
